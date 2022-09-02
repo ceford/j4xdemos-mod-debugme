@@ -4,8 +4,8 @@
  * @package     Joomla.Site
  * @subpackage  mod_debugme
  *
- * @copyright   (C) 2022 Clifford E Ford.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2022 Clifford E Ford. All rights reserved.
+ * @license     GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
  */
 
 namespace J4xdemos\Module\Debugme\Site\Helper;
