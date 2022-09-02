@@ -1,4 +1,4 @@
-# Joomla 4x Example Module - Moddebugme
+# Joomla 4x Example Module - mod_debugme
 
 A module prepared for Joomla for debugging practice.
 
