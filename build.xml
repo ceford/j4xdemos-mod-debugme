@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="mod_debugme" basedir="." default="main">
-	<property file=".project" />
+<project name="mod_debugme" default="main">
+
+	<property name="srcdir" value="./" override="true" />
 
 	<property name="joomladir" value="/Users/ceford/public_html/j421rc2"  override="true" />
 
-	<property name="srcdir" value="${project.basedir}" override="true" />
-
-	<property name="zipsdir" value="${project.basedir}/../zips/j4xdemos" override="true" />
+	<property name="zipsdir" value="../zips/j4xdemos" override="true" />
 
 	<!-- Fileset for site files -->
 
