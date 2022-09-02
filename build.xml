@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="mod_debugme" basedir="." default="main">
+	<property file=".project" />
+
+	<property name="joomladir" value="/Users/ceford/public_html/j421rc2"  override="true" />
+
+	<property name="srcdir" value="${project.basedir}" override="true" />
+
+	<property name="zipsdir" value="${project.basedir}/../zips/j4xdemos" override="true" />
+
+	<!-- Fileset for site files -->
+
+	<fileset dir="./mod_debugme" id="modfiles">
+		<include name="**" />
+	</fileset>
+
+	<!-- fileset for zip -->
+	<fileset dir="./mod_debugme" id="allfiles">
+		<include name="**" />
+	</fileset>
+
+	<!-- ============================================  -->
+	<!-- (DEFAULT) Target: main						-->
+	<!-- ============================================  -->
+	<target name="main" description="main target">
+
+		<copy todir="${joomladir}/modules/mod_debugme">
+			<fileset refid="modfiles" />
+		</copy>
+
+		<zip destfile="${zipsdir}/mod_debugme.zip">
+			<fileset refid="allfiles" />
+		</zip>
+	</target>
+</project>
