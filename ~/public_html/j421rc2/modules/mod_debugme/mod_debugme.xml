@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="4.0" method="upgrade" client="site">
+	<name>mod_debugme</name>
+	<creationDate>August 2019</creationDate>
+	<author>Clifford E Ford</author>
+	<authorEmail>cliff@ford.myzen.co.uk</authorEmail>
+	<authorUrl>https://github.com/ceford</authorUrl>
+	<copyright>Copyright (C) 2022 Clifford E Ford, All rights reserved.</copyright>
+	<license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<!--  The version string is recorded in the components table -->
+	<version>1.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>MOD_DEBUGME_XML_DESCRIPTION</description>
+	<namespace>J4xdemos\Module\Debugme</namespace>
+	<!-- <namespace path="src">J4xdemos\Module\Debugme</namespace> -->
+
+	<files>
+		<filename module="mod_debugme">mod_debugme.php</filename>
+		<filename module="mod_debugme">mod_debugme-data.sql</filename>
+		<filename>mod_debugme.xml</filename>
+		<!-- <folder>language</folder> -->
+		<folder>src</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+				<field
+					name="number_of_events"
+					type="number"
+					label="MOD_DEBUGME_PARAMS_NUMBER_OF_EVENTS_LABEL"
+					description="MOD_DEBUGME_PARAMS_NUMBER_OF_EVENTS_DESC"
+					default="3"
+					min="1"
+					max="5"
+					required="true"
+					></field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

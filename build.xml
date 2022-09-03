@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="mod_debugme" default="main">
 
+	<property name="userdir" value="/Users/ceford" />
+
 	<property name="srcdir" value="./" override="true" />
 
-	<property name="joomladir" value="/Users/ceford/public_html/j421rc2"  override="true" />
+	<property name="joomladir" value="${userdir}/public_html/j421rc2"  override="true" />
 
-	<property name="zipsdir" value="../zips/j4xdemos" override="true" />
+	<property name="zipsdir" value="${userdir}/zips" override="true" />
 
 	<!-- Fileset for site files -->
 
@@ -14,7 +16,7 @@
 	</fileset>
 
 	<!-- fileset for zip -->
-	<fileset dir="./mod_debugme" id="allfiles">
+	<fileset dir="./mod_debugme" id="zipfiles">
 		<include name="**" />
 	</fileset>
 
@@ -28,7 +30,7 @@
 		</copy>
 
 		<zip destfile="${zipsdir}/mod_debugme.zip">
-			<fileset refid="allfiles" />
+			<fileset refid="zipfiles" />
 		</zip>
 	</target>
 </project>
